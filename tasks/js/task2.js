@@ -22,5 +22,10 @@ let fr = fs.readdir(directoryPath, function (err, files) {
     // console.log(typeof hash.copy().digest('hex').split('').sort().join(''));
     // console.log('========================');
   });
-  return resIn;
+  console.log(resIn);
 });
+
+// async function fileType() {
+//   let files = await promises.readdir(path.resolve(__dirname, 'access'));
+//   return files.map((file) => file.split('.').slice(0, -1).join('.'));
+// }
